@@ -25,7 +25,7 @@ fn main() {
         .define("CASC_BUILD_STATIC_LIB", "ON")
         .build();
 
-    let lib = dst.join("lib");
+    let lib = dst.join("lib64");
 
     println!("cargo:rustc-link-search=native={}", lib.display());
     println!("cargo:rustc-link-lib=static=casc");
